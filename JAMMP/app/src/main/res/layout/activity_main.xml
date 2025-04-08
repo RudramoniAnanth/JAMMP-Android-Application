@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- RelativeLayout with back arrow and title, placed at the top -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/health_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Hub"
+            android:textColor="@color/my_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header Section -->
+            <TextView
+                android:id="@+id/header_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About HealthHub"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/my_primary"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp" />
+
+            <!-- Mission Statement -->
+            <TextView
+                android:id="@+id/mission_statement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At HealthHub, we're on a mission to revolutionize personal health management. We believe that everyone deserves easy access to high-quality healthcare information and services. Our comprehensive platform empowers individuals to take control of their health journey with confidence and ease."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="8dp" />
+
+            <!-- Vision Section -->
+            <TextView
+                android:id="@+id/vision_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Vision"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/my_secondary"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/vision_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We envision a world where managing your health is as simple and intuitive as using your favorite app. HealthHub brings together cutting-edge technology and healthcare expertise to make this vision a reality."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="8dp" />
+
+            <TextView
+                android:id="@+id/offer_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What We Offer"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/my_secondary"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <!-- Offer Points -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Simplified Healthcare Access"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Real-time appointment booking with healthcare providers\n- Easy-to-use symptom checker\n- Efficient management of your healthcare needs"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="8dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Timely Health Information"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Real-time health news and alerts\n- Updates on health trends and outbreaks\n- Important recall information to keep you safe"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="8dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Enhanced Health Awareness"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Personalized health insights\n- Tailored recommendations for your well-being\n- Educational resources to boost your health literacy"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="8dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• User-Friendly Experience"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                android:layout_marginStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Intuitive interface design\n- All-in-one platform for various health management tools\n- Seamless integration of services for your."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="8dp"
+                android:layout_marginStart="16dp"
+                android:paddingBottom="24dp" />
+
+            <!-- Closing Statement -->
+            <TextView
+                android:id="@+id/closing_statement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At HealthHub, we're committed to improving your overall well-being by making healthcare more accessible, informed, and convenient. Join us in our journey towards a healthier, happier world – one click at a time."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="8dp"
+                android:paddingBottom="24dp" />
+            <TextView
+                android:id="@+id/header_Services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Services"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/my_primary"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp" />
+            <!-- Grid Layout moved inside ScrollView -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/symptomCheckerFrame"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:focusable="true">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/scicon" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="152dp"
+                            android:background="@drawable/image_selector" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Symptom Checker"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/newsFrame"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:focusable="true">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/news" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/image_selector"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Health News"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/fitnessFrame"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:focusable="true">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/fvicon" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/image_selector"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fitness"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/appointmentFrame"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:focusable="true">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/docapp" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/image_selector"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Book Appointment"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

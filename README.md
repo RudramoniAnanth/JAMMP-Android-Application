@@ -8,101 +8,97 @@ JAMMP is an Android mobile application designed to address the healthcare manage
 **Problem Addressed:** 
 Busy schedules often make it difficult to prioritize health, leading to challenges in accessing timely symptom assessment, convenient appointment scheduling, and relevant health information. This can result in delayed care and increased health anxiety.
 
-**Our Solution:** 
-JAMMP offers a holistic mobile health management solution by integrating:
-* Symptom assessment tools
-* Real-time appointment booking
-* Access to fitness resources
-* Timely health news and updates
+# JAMMP Mobile Health Solution
 
-This aims to streamline healthcare processes, enhance health awareness, and promote a more balanced lifestyle.
+**Our Solution:** JAMMP integrates symptom assessment, appointment booking, fitness resources, and health news to streamline healthcare and promote healthier lifestyles.
 
-## Features and Technical Implementation
+## Features
 
-### For Regular Users:
+### For Users:
 
-* **User Authentication:**
-    * **Functionality:** Secure Sign-Up, Sign-In, and Password Reset.
-    * **Technical Implementation:**
-        * Uses **Firebase Authentication** for core operations (`createUserWithEmailAndPassword`, `signInWithEmailAndPassword`, `sendPasswordResetEmail`).
-        * **Firebase Realtime Database** is queried during sign-up to ensure username uniqueness and during sign-in (if a username is provided) to retrieve the associated email for authentication. User details (including user type) are stored here upon registration.
+- **User Authentication:**
+  - Secure sign-up/in via Firebase Authentication
+  - Firebase Realtime Database stores user details and ensures username uniqueness
 
-* **Symptom Guidance:**
-    * **Check Your Symptoms:** Select how you're feeling from a comprehensive list. A handy search helps you find symptoms quickly.
-    * **Get Potential Insights:** Based on your selections, the app suggests possible health conditions by matching your symptoms against common patterns. *Note: This feature provides general guidance and is not a substitute for professional medical advice.*
-    * **Next Steps:** If needed, the app can guide you towards booking a doctor's appointment right after checking your symptoms.
+- **Symptom Guidance:**
+  - Select symptoms from searchable list
+  - Receive potential health insights based on symptom patterns
+  - Book doctor appointments based on results
 
-* **Connect with Doctors:**
-    * **Find Healthcare Professionals:** Browse through a directory of doctors. You can see their specialty, clinic information, location, and photo.
-    * **Search Made Easy:** Quickly find doctors by name, specialty, or clinic using the search bar.
-    * **Book Appointments:** Simply tap a button within a doctor's profile to initiate a phone call using your device's calling feature, making it easier to schedule a visit. Doctor profiles are kept up-to-date via the application's database (Firebase).
+- **Doctor Connections:**
+  - Browse doctor directory with specialties and clinic information
+  - Search by name, specialty, or clinic
+  - Book appointments through in-app calling feature
+  - Firebase maintains doctor profiles
 
-* **Stay Informed with Health News:**
-    * **Latest Updates:** Get current health news articles delivered directly within the app, sourced reliably via the GNews service.
-    * **Read & Explore:** View article summaries and images in a clean, scrollable list. Filter news that interests you or search for specific topics. Click to read more details and access the original source online.
+- **Health News:**
+  - Current health articles via GNews service
+  - Browse summaries with images
+  - Filter/search topics of interest
 
-* **Get Fit with Curated Videos:**
-    * **Fitness Library:** Explore a collection of fitness videos suitable for various interests, sourced via the YouTube API.
-    * **Browse & Watch:** Search for videos by title and view them instantly (opens conveniently in your YouTube app or web browser). Video lists are maintained through the application's database (Firebase).
+- **Fitness Videos:**
+  - Curated fitness content via YouTube API
+  - Search by title
+  - Videos open in YouTube app/browser
 
 ### For Administrators:
 
-* **Easy Management Hub:**
-    * A dedicated section provides access to all administrative controls after logging in.
-      
-* **Manage Users:**
-    * Administrators can directly add new users to the system and define their roles (e.g., standard user or another administrator). This process interacts directly with the application's user database (Firebase).
+- **Management Hub:**
+  - Centralized admin controls
 
-* **Maintain Doctor Directory:**
-    * Admins are responsible for adding and updating doctor profiles, including their professional details, contact information, and profile pictures, ensuring the user-facing directory is accurate. All data is stored in the application's database (Firebase).
+- **User Management:**
+  - Add new users and define roles
 
-* **Update Fitness Content:**
-    * Admins can refresh the fitness video library. This feature connects to the YouTube service (via its API) to find new, relevant fitness videos and adds their details to the application's database (Firebase) for users to access.
+- **Doctor Directory:**
+  - Add/update doctor profiles and information
 
-## Technical Stack Summary
+- **Fitness Content:**
+  - Refresh fitness library via YouTube API
 
-* **Platform:** Android (Java)
-* **Backend:** Firebase (Authentication, Realtime Database)
-* **External APIs:** GNews API, YouTube Data API v3
-* **Networking:** OkHttp
-* **Image Loading:** Picasso, Glide
-* **Data Handling:** Base64 encoding (for images)
+## Technical Stack
+
+- **Platform:** Android (Java)
+- **Backend:** Firebase (Authentication, Realtime Database)
+- **APIs:** GNews, YouTube Data API v3
+- **Libraries:** OkHttp, Picasso, Glide
+- **Data:** Base64 encoding for images
 
 ## Usage
 
-*(Refer to the "Features and Technical Implementation" section above for detailed usage patterns integrated with technical aspects.)*
+1. **Users:** Access dashboard features after sign-up/in
+2. **Administrators:** Manage members, doctors, and fitness content
 
-1.  **Users:** Sign up/in, then use the main dashboard to access features like Symptom Checker, News, Fitness Videos, and Doctor Booking. Interactions trigger underlying Firebase operations, API calls, and internal logic as described above.
-2.  **Administrators:** Sign in with admin credentials to access the Admin Dashboard, then navigate to manage members, register doctors, or curate fitness videos, utilizing specific Firebase and API integrations.
+## Setup
 
-## Usage Guide
-
-1.  **Getting Started:** Download and install the application. Sign up for a new account or log in.
-2.  **Exploring Features:** Use the main screen to navigate between the Symptom Checker, Doctor Booking, Health News, and Fitness Video sections. Interact with the lists, search bars, and buttons as described in the "Features" section.
-3.  **Admin Access:** Users designated as administrators will be directed to the Admin Hub after logging in, where they can manage users, doctors, and video content.
-
-## Setup 
-
-* Ensure you have Android Studio installed.
-* Clone the repository.
-* Set up a Firebase project (including Authentication and Realtime Database) and add the generated `google-services.json` file to the `app` directory.
-* Obtain API keys for GNews and YouTube Data API v3. Configure these securely within the project (e.g., via `local.properties` and `build.gradle` or similar mechanism – avoid hardcoding keys in source files).
-* Build and run the application on an emulator or physical device.
+- Install Android Studio
+- Clone repository
+- Configure Firebase project with Authentication and Realtime Database
+- Add `google-services.json` to app directory
+- Obtain API keys for GNews and YouTube
+- Build and run on emulator/device
 
 ## 🔮 Future Work
-As part of our ongoing commitment to improve JAMMP into a smart, AI-powered healthcare assistant, we plan to integrate the following features in upcoming versions. These enhancements aim to offer intelligent, inclusive, and accessible healthcare support to users in remote and underserved communities.
 
-### 🧠 AI Chatbot for Mental Health Support  
-We plan to integrate an AI-powered chatbot using NLP models like **BERT** or **LSTM** to detect signs of stress, anxiety, or depression from user inputs. The chatbot will offer real-time support including relaxation tips and motivational responses. **Speech-to-text** and **multilingual processing** will be added to improve accessibility and engagement for diverse users.
+### 🧠 AI Chatbot for Mental Health
+- NLP models (BERT/LSTM) for emotional support
+- Speech-to-text and multilingual processing for accessibility
 
-### 🏃 AI-Driven Personalized Fitness & Wellness Recommendations  
-Our system will collect user health metrics like **age**, **weight**, and **activity level** to deliver AI-generated workout and wellness plans. **Reinforcement learning** and **collaborative filtering** will personalize recommendations, while **MediaPipe-based pose detection** will offer posture feedback during exercise.
+### 🏃 AI-Driven Fitness & Wellness
+- Personalized workout plans based on user metrics
+- Reinforcement learning and collaborative filtering
+- MediaPipe-based pose detection for feedback
 
-### 📢 AI-Generated Health Education & Awareness  
-We aim to use **transformer-based models** such as **T5** or **Pegasus** to summarize verified health news and generate region-specific public health content. This will be translated into local languages using **pretrained translation models**, with delivery through a dedicated **in-app news section**.
+### 📢 AI-Generated Health Education
+- Transformer models (T5/Pegasus) for health content
+- Translation to local languages
+- Region-specific public health information
 
-### 🚨 AI-Based Emergency Response System  
-This feature will use the device’s **GPS** and **Google Maps API** to locate nearby healthcare centers in real time. allowing the app to guide users to appropriate care or trigger emergency alerts.
+### 🚨 AI-Based Emergency Response
+- GPS and Google Maps API integration
+- Real-time healthcare center location
+- Emergency alerts system
 
-### 🧠🔗 Integration of Neuro-Symbolic Thinking  
-We plan to integrate **Neuro-Symbolic AI**, which combines the strengths of deep learning (neural networks) with symbolic reasoning (knowledge graphs and logic rules). This hybrid approach will improve **explainability**, **reasoning over medical rules**, and **decision-making transparency** in our system. For example, symbolic logic can help the chatbot or emergency module follow medically approved protocols, while neural models handle complex perception like emotion detection or pattern recognition. This fusion will make JAMMP more robust, interpretable, and medically reliable for both users and healthcare professionals.
+### 🧠🔗 Neuro-Symbolic AI Integration
+- Combines deep learning with symbolic reasoning
+- Improves explainability and decision transparency
+- Follows medical protocols while handling complex perception

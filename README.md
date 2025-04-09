@@ -92,16 +92,16 @@ This aims to streamline healthcare processes, enhance health awareness, and prom
 ## 🔮 Future Work
 As part of our ongoing commitment to improve JAMMP into a smart, AI-powered healthcare assistant, we plan to integrate the following features in upcoming versions. These enhancements aim to offer intelligent, inclusive, and accessible healthcare support to users in remote and underserved communities.
 
-### 🧠 1. AI Chatbot for Mental Health Support  
+### 🧠 AI Chatbot for Mental Health Support  
 We plan to integrate an AI-powered chatbot using NLP models like **BERT** or **LSTM** to detect signs of stress, anxiety, or depression from user inputs. The chatbot will offer real-time support including relaxation tips and motivational responses. **Speech-to-text** and **multilingual processing** will be added to improve accessibility and engagement for diverse users.
 
-### 🏃 2. AI-Driven Personalized Fitness & Wellness Recommendations  
+### 🏃 AI-Driven Personalized Fitness & Wellness Recommendations  
 Our system will collect user health metrics like **age**, **weight**, and **activity level** to deliver AI-generated workout and wellness plans. **Reinforcement learning** and **collaborative filtering** will personalize recommendations, while **MediaPipe-based pose detection** will offer posture feedback during exercise.
 
-### 📢 3. AI-Generated Health Education & Awareness  
+### 📢 AI-Generated Health Education & Awareness  
 We aim to use **transformer-based models** such as **T5** or **Pegasus** to summarize verified health news and generate region-specific public health content. This will be translated into local languages using **pretrained translation models**, with delivery through a dedicated **in-app news section**.
 
-### 🚨 4. AI-Based Emergency Response System  
+### 🚨 AI-Based Emergency Response System  
 This feature will use the device’s **GPS** and **Google Maps API** to locate nearby healthcare centers in real time. allowing the app to guide users to appropriate care or trigger emergency alerts.
 
 ### 🧠🔗 Integration of Neuro-Symbolic Thinking  

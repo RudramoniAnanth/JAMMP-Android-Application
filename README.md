@@ -8,8 +8,6 @@ JAMMP is an Android mobile application designed to address the healthcare manage
 **Problem Addressed:** 
 Busy schedules often make it difficult to prioritize health, leading to challenges in accessing timely symptom assessment, convenient appointment scheduling, and relevant health information. This can result in delayed care and increased health anxiety.
 
-# JAMMP Mobile Health Solution
-
 **Our Solution:** JAMMP integrates symptom assessment, appointment booking, fitness resources, and health news to streamline healthcare and promote healthier lifestyles.
 
 ## Features

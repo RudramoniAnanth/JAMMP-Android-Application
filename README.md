@@ -97,3 +97,7 @@ Busy schedules often make it difficult to prioritize health, leading to challeng
 - Combines deep learning with symbolic reasoning
 - Improves explainability and decision transparency
 - Follows medical protocols while handling complex perception
+
+## Contributors
+**John Austin**
+

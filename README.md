@@ -10,6 +10,8 @@ Busy schedules often make it difficult to prioritize health, leading to challeng
 
 **Our Solution:** JAMMP integrates symptom assessment, appointment booking, fitness resources, and health news to streamline healthcare and promote healthier lifestyles.
 
+ ![Image Alt](https://github.com/RudramoniAnanth/JAMMP-Android-Application/blob/e53e5da961cb05c7638d3c60bc2d41360d2d7a6d/JAMMP/application_image.png)
+
 ## Features
 
 ### For Users:

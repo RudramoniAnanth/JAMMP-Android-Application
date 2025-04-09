@@ -86,11 +86,6 @@ Busy schedules often make it difficult to prioritize health, leading to challeng
 - Reinforcement learning and collaborative filtering
 - MediaPipe-based pose detection for feedback
 
-### 📢 AI-Generated Health Education
-- Transformer models (T5/Pegasus) for health content
-- Translation to local languages
-- Region-specific public health information
-
 ### 🚨 AI-Based Emergency Response
 - GPS and Google Maps API integration
 - Real-time healthcare center location

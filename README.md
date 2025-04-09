@@ -99,5 +99,5 @@ Busy schedules often make it difficult to prioritize health, leading to challeng
 - Follows medical protocols while handling complex perception
 
 ## Contributors
-**John Austin**
+**K. John Austin**
 
